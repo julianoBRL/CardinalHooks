@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>io.github.julianobrl</groupId>
 	<artifactId>cardinalhooks</artifactId>
-	<version>1.0.3</version>
+	<version>1.4.0</version>
 	<name>CardinalHooks</name>
 	<description>projeto de implementação de webhooks e eventos para projeto pessoal</description>
 	
@@ -71,6 +71,12 @@
 		    <artifactId>junit-jupiter-api</artifactId>
 		    <version>5.8.2</version>
 		    <scope>test</scope>
+		</dependency>
+		
+		<dependency>
+			<groupId>io.github.julianobrl</groupId>
+		  	<artifactId>easy-events</artifactId>
+		  	<version>1.0.0</version>
 		</dependency>
 		
 	</dependencies>

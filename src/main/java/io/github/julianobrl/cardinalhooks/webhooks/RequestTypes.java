@@ -1,4 +1,4 @@
-package io.github.julianobrl.webhooks;
+package io.github.julianobrl.cardinalhooks.webhooks;
 
 public enum RequestTypes {
 	GET("get"),

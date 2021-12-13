@@ -1,4 +1,4 @@
-package io.github.julianobrl.webhooks;
+package io.github.julianobrl.cardinalhooks.webhooks;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -6,10 +6,10 @@ import java.util.logging.Logger;
 
 import javax.management.ListenerNotFoundException;
 
+import io.github.julianobrl.cardinalhooks.webhooks.exceptions.WebhookNotExists;
 import io.github.julianobrl.events.EventManager;
 import io.github.julianobrl.events.Listener;
 import io.github.julianobrl.events.exeptions.EventNotExists;
-import io.github.julianobrl.webhooks.exceptions.WebhookNotExists;
 import lombok.Getter;
 
 public class WebhookManager {

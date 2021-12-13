@@ -1,4 +1,4 @@
-package io.github.julianobrl.webhooks.exceptions;
+package io.github.julianobrl.cardinalhooks.webhooks.exceptions;
 
 public class WebhookNotExists extends Exception {
 	private static final long serialVersionUID = 1L;
