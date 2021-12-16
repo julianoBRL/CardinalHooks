@@ -1,6 +1,4 @@
-package io.github.julianobrl.cardinalhooks.webhooks.intercptors;
-
-import io.github.julianobrl.cardinalhooks.webhooks.WebHook;
+package io.github.julianobrl.cardinalhooks.webhooks;
 
 public interface Winterceptor {
 	
