@@ -1,4 +1,4 @@
-package io.github.julianobrl.cardinalhooks.annotation.enablewebhooks;
+package io.github.julianobrl.cardinalhooks.annotation;
 
 import org.springframework.context.annotation.Condition;
 import org.springframework.context.annotation.ConditionContext;

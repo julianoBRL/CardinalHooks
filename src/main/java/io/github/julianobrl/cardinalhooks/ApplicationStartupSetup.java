@@ -12,20 +12,23 @@ import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping;
 
-import io.github.julianobrl.cardinalhooks.annotation.enablewebhooks.EnableWebhooks;
-import io.github.julianobrl.cardinalhooks.annotation.enablewebhooks.EnableWebhooksEnabler;
-import io.github.julianobrl.cardinalhooks.annotation.webhookinterceptor.WebhookInterceptor;
+import io.github.julianobrl.cardinalhooks.annotation.EnableWebhooks;
+import io.github.julianobrl.cardinalhooks.annotation.EnableWebhooksEnabler;
+import io.github.julianobrl.cardinalhooks.annotation.WebhookInterceptor;
 import io.github.julianobrl.cardinalhooks.webhooks.WebhookManager;
-import io.github.julianobrl.cardinalhooks.webhooks.intercptors.InterceptorRegister;
-import io.github.julianobrl.cardinalhooks.webhooks.intercptors.Winterceptor;
+import io.github.julianobrl.cardinalhooks.webhooks.interceptors.InterceptorRegister;
+import io.github.julianobrl.cardinalhooks.webhooks.interceptors.Winterceptor;
 
 @Component
 @Order(value = Ordered.HIGHEST_PRECEDENCE)
-public class ApplicationStartupSetup implements
+class ApplicationStartupSetup implements
 ApplicationListener<ContextRefreshedEvent> {
 	
 	@Autowired
 	RequestMappingHandlerMapping requestMappingHandlerMapping;
+	
+	@Autowired
+	CardinalHooksConfig config;
 	
 	private ApplicationContext context;
 	
@@ -39,11 +42,12 @@ ApplicationListener<ContextRefreshedEvent> {
 	@Override
 	public void onApplicationEvent(ContextRefreshedEvent contextRefreshedEvent) {
 		
+		CardinalHooksStaticConfig.getInstance().setConfig(config);
+		
 		initEnableWebhooks();
 		try {
 			initWebhooksInterceptors();
 		} catch (ClassNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		

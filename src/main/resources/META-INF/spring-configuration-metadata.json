@@ -1,0 +1,76 @@
+{
+	
+	"groups": [
+	
+	    {
+	        "name": "cardinalhooks",
+	        "type": "io.github.julianobrl.cardinalhooks.CardinalHooksConfig",
+	        "sourceType": "io.github.julianobrl.cardinalhooks.CardinalHooksConfig"
+	    }
+	    
+	],
+	
+	"properties": [
+	
+	    {
+	        "name": "cardinalhooks.callRetryCount",
+	        "type": "java.lang.Integer",
+	        "sourceType": "io.github.julianobrl.cardinalhooks.CardinalHooksConfig",
+	        "description": ""
+	    },
+	    {
+	        "name": "cardinalhooks.removeAfterRetry",
+	        "type": "java.lang.Boolean",
+	        "sourceType": "io.github.julianobrl.cardinalhooks.CardinalHooksConfig",
+	        "description": ""
+	    },
+	    
+	    
+	    
+	    
+	    {
+	        "name": "cardinalhooks.proxy.enabled",
+	        "type": "java.lang.Boolean",
+	        "sourceType": "io.github.julianobrl.cardinalhooks.CardinalHooksConfig",
+	        "description": ""
+	    },
+	    {
+	        "name": "cardinalhooks.proxy.address",
+	        "type": "java.lang.String",
+	        "sourceType": "io.github.julianobrl.cardinalhooks.CardinalHooksConfig",
+	        "description": ""
+	    },
+	    {
+	        "name": "cardinalhooks.proxy.port",
+	        "type": "java.lang.Integer",
+	        "sourceType": "io.github.julianobrl.cardinalhooks.CardinalHooksConfig",
+	        "description": ""
+	    },
+	    
+	    
+	    
+	    
+	    {
+	        "name": "cardinalhooks.proxy.auth.enabled",
+	        "type": "java.lang.Boolean",
+	        "sourceType": "io.github.julianobrl.cardinalhooks.CardinalHooksConfig",
+	        "description": ""
+	    },
+	    {
+	        "name": "cardinalhooks.proxy.auth.username",
+	        "type": "java.lang.String",
+	        "sourceType": "io.github.julianobrl.cardinalhooks.CardinalHooksConfig",
+	        "description": ""
+	    },
+	    {
+	        "name": "cardinalhooks.proxy.auth.password",
+	        "type": "java.lang.String",
+	        "sourceType": "io.github.julianobrl.cardinalhooks.CardinalHooksConfig",
+	        "description": ""
+	    }
+	    
+	    
+	    
+	]
+	
+}

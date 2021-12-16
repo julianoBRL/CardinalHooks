@@ -12,4 +12,9 @@ class CardinalHooksAutoConfig {
         return new ApplicationStartupSetup(context);
     }
 	
+	@Bean
+	CardinalHooksConfig initConfigs() {
+		return new CardinalHooksConfig();
+	}
+	
 }

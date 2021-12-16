@@ -1,4 +1,4 @@
-package io.github.julianobrl.cardinalhooks.annotation.enablewebhooks;
+package io.github.julianobrl.cardinalhooks.annotation;
 
 import lombok.Getter;
 import lombok.Setter;

@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>io.github.julianobrl</groupId>
 	<artifactId>cardinalhooks</artifactId>
-	<version>1.4.0</version>
+	<version>1.4.9</version>
 	<name>CardinalHooks</name>
 	<description>projeto de implementação de webhooks e eventos para projeto pessoal</description>
 	
@@ -76,10 +76,16 @@
 		<dependency>
 			<groupId>io.github.julianobrl</groupId>
 		  	<artifactId>easy-events</artifactId>
-		  	<version>1.0.0</version>
+		  	<version>1.2.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-configuration-processor</artifactId>
+			<version>2.6.1</version>
 		</dependency>
 		
-	</dependencies>
+    </dependencies>
 	
 	<build>
 		<plugins>
@@ -127,8 +133,8 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
                 <configuration>
-		          <source>1.8</source>
-		          <target>1.8</target>
+		          	<source>1.8</source>
+		          	<target>1.8</target>
 		        </configuration>
                 <executions>
                     <execution>
